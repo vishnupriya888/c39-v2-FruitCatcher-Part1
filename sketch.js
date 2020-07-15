@@ -45,6 +45,9 @@ function draw() {
      game.play();
    }
    if (gameState === 2) {
+     background("lightpink");
+     final = new End();
+     final.display();
      game.end();
    }
 }
