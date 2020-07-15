@@ -13,7 +13,7 @@ var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
 var player1score =0;
 var player2score =0;
-var time = 60;
+
 function preload(){
   back_img = loadImage("images/jungle.jpg");
   player_img = loadImage("images/basket2.png");
@@ -40,14 +40,11 @@ function draw() {
      game.update(1);
    }
    if (gameState === 1) {
-     clear();
-     time = time-0.1;
+     clear(); 
      game.play();
    }
    if (gameState === 2) {
-     background("lightpink");
-     final = new End();
-     final.display();
+    
      game.end();
    }
 }
